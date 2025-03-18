@@ -1,0 +1,23 @@
+[package]
+name = "fastrace-reqwest"
+version = "0.1.0"
+
+categories = ["development-tools::debugging"]
+description = "A reqwest util for propagating trace context for fastrace"
+keywords = ["tracing", "fastrace", "reqwest", "traceparent", "propagation"]
+readme = "../README.md"
+
+edition = "2021"
+license = "Apache-2.0"
+repository = "https://github.com/fast/fastrace-reqwest"
+rust-version = "1.83"
+
+[dependencies]
+reqwest = "0.12"
+fastrace = "0.7"
+
+[dev-dependencies]
+fastrace = { version = "0.7", features = ["enable"] }
+fastrace-poem = { path = "../fastrace-poem" }
+tokio = { version = "1.44", features = ["full"] }
+poem = "3.1"

@@ -235,6 +235,7 @@ dependencies = [
 [[package]]
 name = "fastrace-poem"
 version = "0.1.0"
+source = "git+https://github.com/fast/fastrace-poem#d00fd9cb4801d41a52832321a63702cbe1e01e37"
 dependencies = [
  "fastrace",
  "poem",

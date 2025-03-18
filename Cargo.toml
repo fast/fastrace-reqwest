@@ -13,11 +13,11 @@ repository = "https://github.com/fast/fastrace-reqwest"
 rust-version = "1.83"
 
 [dependencies]
-reqwest = "0.12"
 fastrace = "0.7"
+reqwest = "0.12"
 
 [dev-dependencies]
 fastrace = { version = "0.7", features = ["enable"] }
-fastrace-poem = { path = "../fastrace-poem" }
-tokio = { version = "1.44", features = ["full"] }
+fastrace-poem = { git = "https://github.com/fast/fastrace-poem" }
 poem = "3.1"
+tokio = { version = "1.44", features = ["full"] }

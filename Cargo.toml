@@ -5,7 +5,7 @@ version = "0.1.0"
 categories = ["development-tools::debugging"]
 description = "A reqwest util for propagating trace context for fastrace"
 keywords = ["tracing", "fastrace", "reqwest", "traceparent", "propagation"]
-readme = "../README.md"
+readme = "README.md"
 
 edition = "2021"
 license = "Apache-2.0"

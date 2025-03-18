@@ -29,7 +29,7 @@ async fn main() {
         send_request().await;
     }
 
-    // Ensure all spans are reported.
+    // Flush any remaining traces before the program exits.
     fastrace::flush();
 }
 

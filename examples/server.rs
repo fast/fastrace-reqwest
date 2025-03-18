@@ -38,12 +38,12 @@ async fn main() -> Result<(), std::io::Error> {
     // The middleware extracts trace context from incoming requests.
     let app = Route::new().at("/ping", get(ping)).with(FastraceMiddleware);
 
-    // Start the server
+    // Start the server.
     Server::new(TcpListener::bind("0.0.0.0:8080"))
         .run(app)
         .await?;
 
-    // Ensure all spans are reported
+    // Flush any remaining traces before the program exits.
     fastrace::flush();
 
     Ok(())

@@ -14,9 +14,9 @@ Distributed tracing integration for [reqwest](https://crates.io/crates/reqwest) 
 
 ## What is Context Propagation?
 
-Distributed tracing works by passing trace context (trace IDs, span IDs, etc.) between services. This allows individual service traces to be connected into a complete picture of a request's journey through your system.
+Context propagation is a fundamental concept in distributed tracing that enables the correlation of operations spanning multiple services. When a request moves from one service to another, trace context information needs to be passed along, ensuring that all operations are recorded as part of the same trace.
 
-Context propagation refers to the act of passing this trace context between services. In HTTP-based systems, this is typically done via HTTP headers like `traceparent` following the [W3C Trace Context](https://www.w3.org/TR/trace-context/) specification.
+`fastrace-reqwest` implements the [W3C Trace Context](https://www.w3.org/TR/trace-context/) standard for propagating trace information between services. This ensures compatibility with other tracing systems that follow the same standard.
 
 ## Features
 

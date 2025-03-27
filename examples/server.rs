@@ -3,7 +3,7 @@ use fastrace::collector::ConsoleReporter;
 
 #[tokio::main]
 async fn main() {
-    // Configurate fastrace reporter.
+    // Initialize fastrace with the console reporter.
     fastrace::set_reporter(ConsoleReporter, Config::default());
 
     let app = axum::Router::new()
@@ -16,7 +16,7 @@ async fn main() {
     axum::serve(listener, app).await.unwrap();
 }
 
-#[fastrace::trace] // Trace individual handlers.
+#[fastrace::trace]
 async fn ping() -> &'static str {
     "pong"
 }

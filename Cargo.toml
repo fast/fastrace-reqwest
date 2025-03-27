@@ -17,5 +17,7 @@ fastrace = "0.7"
 reqwest = "0.12"
 
 [dev-dependencies]
+axum = "0.8"
 fastrace = { version = "0.7", features = ["enable"] }
+fastrace-axum = { git = "https://github.com/fast/fastrace-axum" }
 tokio = { version = "1.44", features = ["full"] }

@@ -1,6 +1,6 @@
 [package]
 name = "fastrace-reqwest"
-version = "0.1.0"
+version = "0.1.1"
 
 categories = ["development-tools::debugging"]
 description = "A reqwest util for propagating trace context for fastrace"

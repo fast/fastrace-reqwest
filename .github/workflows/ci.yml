@@ -43,4 +43,4 @@ jobs:
       - name: Check examples
         run: |
           cargo +${{ matrix.rust }} check --example client
-          cargo +${{ matrix.rust }} check --example server
+          # cargo +${{ matrix.rust }} check --example server

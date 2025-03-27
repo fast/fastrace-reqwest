@@ -8,6 +8,8 @@ async fn main() {
 
     let app = axum::Router::new()
         .route("/ping", axum::routing::get(ping))
+        // Add a the FastraceLayer to routes.
+        // The layer extracts trace context from incoming requests.
         .layer(fastrace_axum::FastraceLayer);
 
     let listener = tokio::net::TcpListener::bind("0.0.0.0:8080").await.unwrap();

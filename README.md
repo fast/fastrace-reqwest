@@ -31,7 +31,7 @@ Add to your `Cargo.toml`:
 ```toml
 [dependencies]
 fastrace = "0.7"
-fastrace-reqwest = "0.1"
+fastrace-reqwest = "0.2"
 ```
 
 ## Usage

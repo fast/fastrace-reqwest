@@ -13,11 +13,11 @@ repository = "https://github.com/fast/fastrace-reqwest"
 rust-version = "1.80"
 
 [dependencies]
-fastrace = { version = "0.7" }
-reqwest = { version = "0.12", default-features = false }
+fastrace = "0.7"
+reqwest = "0.12"
 
 [dev-dependencies]
-axum = { version = "0.8" }
+axum = "0.8"
 fastrace = { version = "0.7", features = ["enable"] }
 fastrace-axum = { git = "https://github.com/fast/fastrace-axum" }
 tokio = { version = "1.44", features = ["full"] }

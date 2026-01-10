@@ -1,20 +1,20 @@
 [package]
 name = "fastrace-reqwest"
-version = "0.2.0"
+version = "0.3.0"
 
 categories = ["development-tools::debugging"]
 description = "A reqwest util for propagating trace context for fastrace"
 keywords = ["tracing", "fastrace", "reqwest", "traceparent", "propagation"]
 readme = "README.md"
 
-edition = "2021"
+edition = "2024"
 license = "Apache-2.0"
 repository = "https://github.com/fast/fastrace-reqwest"
-rust-version = "1.82"
+rust-version = "1.85"
 
 [dependencies]
 fastrace = { version = "0.7" }
-reqwest = { version = "0.12", default-features = false }
+reqwest = { version = "0.13", default-features = false }
 
 [dev-dependencies]
 axum = { version = "0.8" }
